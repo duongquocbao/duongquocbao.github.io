@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTinker | Portfolio Kỹ thuật & Phần mềm</title>
+    <style>
+        /* CSS CƠ BẢN - GIAO DIỆN SÁNG (LIGHT THEME) */
+        :root {
+            --bg-color: #f8f9fc;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --accent-color: #0284c7; /* Màu xanh dương kỹ thuật */
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
 
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: var(--text-main);
+        }
+        header p {
+            font-size: 1.2em;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        /* SECTION TIÊU ĐỀ */
+        h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            color: var(--text-main);
+            display: inline-block;
+        }
+
+        /* LƯỚI KỸ NĂNG */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* DANH SÁCH DỰ ÁN */
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+        .project-card p {
+            margin-bottom: 0;
+            color: var(--text-muted);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>TechTinker</h1>
+            <p>Kỹ sư | Chuyên gia Dữ liệu & Tự động hóa Thiết kế</p>
+        </header>
+
+        <section>
+            <h2>Về Tôi</h2>
+            <p>Chào bạn! Tôi là một kỹ sư có niềm đam mê mạnh mẽ với việc kết hợp kiến thức chuyên môn xây dựng, cơ điện với tư duy lập trình. Mục tiêu của tôi là tạo ra các công cụ phần mềm, tự động hóa bản vẽ và ứng dụng phân tích dữ liệu để giải quyết các bài toán kỹ thuật phức tạp một cách tối ưu nhất.</p>
+        </section>
+
+        <section>
+            <h2>Kỹ năng & Công cụ</h2>
+            <div class="skills">
+                <div class="skill-tag">AutoLISP / AutoCAD</div>
+                <div class="skill-tag">C# (WinForms)</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">MATLAB</div>
+                <div class="skill-tag">SPSS</div>
+                <div class="skill-tag">Tiếng Anh (VSTEP B2)</div>
+                <div class="skill-tag">Hardware (Raspberry Pi)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Dự án Tiêu biểu</h2>
+
+            <div class="project-card">
+                <h3>Phân tích dữ liệu & Biến động chi phí dự án</h3>
+                <p><strong>Mô tả:</strong> Sử dụng SPSS, MATLAB và Python để phân tích tác động của lãi suất đến chi phí xây dựng các dự án dân dụng tại Cần Thơ. Nghiên cứu này phục vụ trực tiếp cho việc đánh giá rủi ro tài chính và tối ưu hóa ngân sách công trình.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Bộ Lisp Tối ưu hóa AutoCAD & Chiếu sáng</h3>
+                <p><strong>Mô tả:</strong> Viết các script bằng AutoLISP để tự động hóa quy trình vẽ, bóc tách khối lượng và thiết kế hệ thống chiếu sáng cơ điện, giúp giảm thiểu sai sót và tăng tốc độ hoàn thiện bản vẽ lên nhiều lần.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Phần mềm Hỗ trợ Tính toán Kỹ thuật (Desktop App)</h3>
+                <p><strong>Mô tả:</strong> Thiết kế và lập trình các ứng dụng với giao diện đồ họa C# WinForms, cung cấp công cụ tính toán thông số kỹ thuật trực quan cho kỹ sư ngay trên môi trường Windows.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Hệ thống Home Cloud Server Cá nhân</h3>
+                <p><strong>Mô tả:</strong> Tự cấu hình và thiết lập một máy chủ lưu trữ dữ liệu đám mây tại nhà sử dụng bo mạch Raspberry Pi kết hợp với ổ cứng chuẩn SATA, đảm bảo an toàn và truy cập dữ liệu kỹ thuật mọi lúc mọi nơi.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Kết nối với tôi qua: <a href="mailto:email-cua-ban@gmail.com">Email</a> | <a href="https://github.com/ten-github-cua-ban">GitHub</a></p>
+            <p>© 2026 TechTinker. Built with Code & Logic.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
